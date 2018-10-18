@@ -5,5 +5,5 @@ set -e
 if [ -d /usr/share/lider-cluster-server ] && [ "$1" = "purge" ];then
 	systemctl stop lider.service
 	rm -rf /usr/share/lider-cluster-server
-
+	systemctl daemon-reload
 fi

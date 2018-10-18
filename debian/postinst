@@ -3,7 +3,7 @@
 set -e
 
 if [ -d /usr/share/lider-cluster-server ]; then
-	systemctl enable lider.service
+	update-rc.d lider defaults
 	systemctl start lider.service
 fi
 
