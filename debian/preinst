@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ -d /usr/share/lider-cluster-server ]; then
+
+    cp -rf /usr/share/lider-cluster-server /tmp
+    systemctl stop lider.service
+else
+
+    mkdir -p /usr/share/lider-cluster-server
+fi

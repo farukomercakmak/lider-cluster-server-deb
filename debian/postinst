@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ -d /usr/share/lider-cluster-server ]; then
+	
+	update-rc.d lider defaults
+	systemctl start lider.service
+
+fi
+
