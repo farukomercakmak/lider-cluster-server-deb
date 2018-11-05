@@ -62,6 +62,7 @@
         <configfile finalname="/etc/tr.org.liderahenk.disklimit.cfg" override="true">mvn:tr.org.liderahenk/lider-disk-limit/1.1/cfg</configfile>
         <configfile finalname="/etc/tr.org.liderahenk.manageroot.cfg" override="true">mvn:tr.org.liderahenk/lider-manage-root/1.1/cfg</configfile>
         <configfile finalname="/etc/tr.org.liderahenk.restore.cfg" override="true">mvn:tr.org.liderahenk/lider-restore/1.1/cfg</configfile>
+        <configfile finalname="/etc/tr.org.liderahenk.ldaplogin.cfg" override="true">mvn:tr.org.liderahenk/lider-ldap-login/1.1/cfg</configfile>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-remote-access/1.1
 		</bundle>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-package-manager/1.1
@@ -124,6 +125,10 @@
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-restore/1.1
 		</bundle>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-restore-db/1.1
+		</bundle>
+        <bundle start-level="90">mvn:tr.org.liderahenk/lider-ldap-login/1.1
+		</bundle>
+        <bundle start-level="90">mvn:tr.org.liderahenk/lider-ldap-login-db/1.1
 		</bundle>
     </feature>
     <feature name="lider-dependent-bundles" description="Lider Ahenk Karaf Features" version="1.1.0">
